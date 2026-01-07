@@ -1,6 +1,6 @@
 # WebSlider to PDF Converter
 
-A cross-platform command-line tool that converts `.webslider` (tar archive) presentations into PDF documents by rendering each slide as a high-quality JPEG image.
+A cross-platform command-line tool that converts `.webslider` (tar archive) presentations into PDF documents by rendering each slide as a high-quality JPEG image. 
 
 ## Features
 
