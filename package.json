@@ -1,0 +1,40 @@
+{
+  "name": "webslider-pdf",
+  "version": "1.0.0",
+  "description": "Cross-platform CLI tool to convert .webslider presentations to PDF",
+  "main": "make-pdf.js",
+  "type": "module",
+  "bin": {
+    "webslider-pdf": "./make-pdf.js"
+  },
+  "scripts": {
+    "start": "bun run make-pdf.js",
+    "build:linux-x64": "bun build --compile --target=bun-linux-x64 make-pdf.js --outfile=dist/webslider-pdf-linux-x64",
+    "build:linux-arm64": "bun build --compile --target=bun-linux-arm64 make-pdf.js --outfile=dist/webslider-pdf-linux-arm64",
+    "build:macos-x64": "bun build --compile --target=bun-darwin-x64 make-pdf.js --outfile=dist/webslider-pdf-macos-x64",
+    "build:macos-arm64": "bun build --compile --target=bun-darwin-arm64 make-pdf.js --outfile=dist/webslider-pdf-macos-arm64",
+    "build:windows": "bun build --compile --target=bun-windows-x64 make-pdf.js --outfile=dist/webslider-pdf-windows-x64.exe",
+    "build:all": "bun run build:linux-x64 && bun run build:linux-arm64 && bun run build:macos-x64 && bun run build:macos-arm64 && bun run build:windows"
+  },
+  "keywords": [
+    "webslider",
+    "pdf",
+    "presentation",
+    "slides",
+    "converter",
+    "puppeteer",
+    "bun"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^23.6.0",
+    "tar": "^7.4.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
