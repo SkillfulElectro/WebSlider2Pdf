@@ -2,6 +2,8 @@
 
 A cross-platform command-line tool that converts `.webslider` (tar archive) presentations into PDF documents by rendering each slide as a high-quality JPEG image. 
 
+**this project tries to fix problems with ![WebSlider](https://skillfulelectro.github.io/WebSlider/)**
+
 ## Features
 
 - 🖥️ **Cross-platform** - Works on Linux, macOS, and Windows
